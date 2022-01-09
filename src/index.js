@@ -1,10 +1,13 @@
 module.exports = function reverse (n) {
-        result = 0
-     
-       for (; n; n=Math.floor(n/10) ){
-          result=result*10;
-          result=result+n%10
-       }  
-     
-       return result
+    let result;
+    let sum="";
+    result=Math.abs(n).toString()
+    console.log(result)
+  
+    for(let i=result.length; i>=1;i--)
+    {sum =sum+result[i-1]
+  
     }
+    result=Number(sum)
+    return  result
+    }  
